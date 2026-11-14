@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="list.php">Liste</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <form action="ajouter.php" method="post">
+    <fieldset>
+      <legend>Inscription</legend>
+
+      <label>Nom</label>
+      <input type="text" name="nom" required>
+
+      <label>Prénom</label>
+      <input type="text" name="prenom" required>
+
+      <label>Tel</label>
+      <input type="text" name="tel" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <p>
+        <label>Sexe</label>
+        <input type="radio" name="sexe" value="Homme" required> Homme
+        <input type="radio" name="sexe" value="Femme"> Femme
+      </p>
+
+      <button type="submit">Envoyer</button>
+    </fieldset>
+  </form>
+
+</body>
+</html>
